@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>Mailing list</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <script src="src/processInput.js"></script>
+    <script src="src/toggleMusic.js"></script>
+  </head>
+
+  <body>
+    <audio id="myAudio" src="media/house.ogg" loop></audio>
+
+    <header>
+      <button id="musicBtn" onclick="toggleMusic()">Play music</button>
+    </header>
+
+    <div id="formMessages"></div>
+
+    <form id="subscriberForm">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <button id="formBtn" onclick="processInput()">Submit</button>
+    </form>
+
+    <script src="jquery-3.4.1.js"></script>
+  </body>
+</html>
